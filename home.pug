@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+      include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to OUR Dance Academy
+        div.small Dance is just not the movement of body , its an EMOTION
+
+    section#missionSection
+        h2 Our Mission 
+        div#cardcontainer
+          div.card
+            h3 Here to Dance
+            div.cardbox 
+              div.cardimg 
+                img(src="/static/mission1.png")
+              div.cardcontent
+                p Dance Perfection
+            div.pricontent
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum quae nobis repellat facere ullam recusandae praesentium impedit quidem, laudantium quasi? Cumque non sunt delectus.
+          
+          div.card
+            h3 Learn and Live Dance
+            div.cardbox 
+              div.cardimg 
+                img(src="/static/_logo.png")
+              div.cardcontent
+                p Dance like never before
+            div.pricontent    
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis esse necessitatibus ea neque in consectetur pariatur? Dolorum ratione ipsum tenetur, unde aliquid inventore voluptate?
+          
+          div.card
+            h3 Dance to Express
+            div.cardbox
+              div.cardimg
+                img(src="/static/mission2.png")
+              div.cardcontent
+                p Expert Teaching
+            div.pricontent    
+              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, explicabo? Dolor, cupiditate? Enim rem nostrum hic quidem accusamus, iste aspernatur doloremque omnis consequuntur perspiciatis consectetur.
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#Sponsorsimage
+          img(src="/static/apple_logo.png" alt="Apple logo" class="SPimg")
+          img(src="/static/google-logo.png" alt="Google logo" class="SPimg")
+          img(src="/static/skype-logo.png" alt="Skype logo" class="SPimg")
+          img(src="/static/microsoft-logo.png" alt="Microsoft logo" class="SPimg")
